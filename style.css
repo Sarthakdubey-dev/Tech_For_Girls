@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #fff6fa; /* pastel pink */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #d72660;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+form#registrationForm {
+  background: #fff;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 32px 0 rgba(215, 38, 96, 0.08), 0 1.5px 6px 0 rgba(0,0,0,0.04);
+  padding: 32px 28px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+form#registrationForm:hover {
+  box-shadow: 0 12px 40px 0 rgba(215, 38, 96, 0.13), 0 2px 8px 0 rgba(0,0,0,0.06);
+  transform: translateY(-4px) scale(1.01);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 1rem;
+  color: #7a3b69;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="file"] {
+  width: 100%;
+  padding: 12px 2px;
+  border: 1px solid #e0d4df;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #faf7fa;
+  margin-bottom: 2px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus {
+  border: 1.5px solid #ff69b4;
+  outline: none;
+  box-shadow: 0 0 0 2px #ffe0f0;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 500;
+  cursor: default;
+  transition: background 0.3s;
+}
+input[type="file"]:hover::-webkit-file-upload-button {
+  background: #d72660;
+}
+
+button {
+  width: 100%;
+  padding: 13px 0;
+  border: none;
+  border-radius: 8px;
+  background: #ff69b4;
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  box-shadow: 0 2px 8px 0 rgba(255, 105, 180, 0.08);
+  transition: background 0.3s, transform 0.3s, opacity 0.3s;
+}
+
+button:hover:not(:disabled),
+button:focus:not(:disabled) {
+  background: #d72660;
+  transform: scale(1.03);
+}
+
+button:disabled {
+  background: #e0d4df;
+  color: #bfa7c6;
+  cursor: not-allowed;
+  opacity: 0.7;
+  box-shadow: none;
+}
+
+.whatsapp-share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+#clickCount {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #d72660;
+  font-weight: 500;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+#successMsg {
+  text-align: center;
+  font-size: 1.18rem;
+  color: #2e7d32;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 0;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 600px) {
+  form#registrationForm {
+    padding: 18px 8px 16px 8px;
+    max-width: 98vw;
+  }
+  main {
+    padding: 0 2vw;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 11px 0;
+  }
+} 

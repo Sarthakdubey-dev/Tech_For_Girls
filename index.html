@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech for Girls Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Register for Tech for Girls 🌸</h1>
+  </header>
+  <div class="container">
+  <main>
+    <section>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="number" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="college">College/Department</label>
+          <input type="text" id="college" name="college" required>
+        </div>
+        <div class="form-group">
+          <label for="screenshot">Screenshot Upload</label>
+          <input type="file" id="screenshot" name="screenshot" accept="image/*" required>
+        </div>
+        <section class="whatsapp-share">
+          <button type="button" id="whatsappShare">Share on WhatsApp</button>
+          <p id="clickCount">Click count: 0/5</p>
+        </section>
+        <button type="submit" id="submitBtn" disabled>Submit Registration</button>
+      </form>
+      <p id="successMsg" style="display:none;">🎉 Your submission has been recorded. Thanks for being part of Tech for Girls!</p>
+    </section>
+  </main>
+</div>
+</body>
+</html> 
