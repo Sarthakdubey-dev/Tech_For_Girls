@@ -159,6 +159,22 @@ button:disabled {
   letter-spacing: 0.2px;
 }
 
+#bombEffect {
+  transition: transform 0.2s;
+  margin-top: 20px;
+}
+
+#bombEffect.explode {
+  animation: bomb-explode 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes bomb-explode {
+  0% { transform: scale(1) rotate(0deg); opacity: 1; }
+  60% { transform: scale(1.5) rotate(20deg); opacity: 1; }
+  80% { transform: scale(2) rotate(-20deg); opacity: 0.7; }
+  100% { transform: scale(0.2) rotate(0deg); opacity: 0; }
+}
+
 @media (max-width: 600px) {
   form#registrationForm {
     padding: 18px 8px 16px 8px;
